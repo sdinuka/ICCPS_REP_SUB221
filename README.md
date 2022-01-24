@@ -20,26 +20,39 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
 • Detailed Summary of the scripts:
 
  (-) WTC_Sys_Algorithm1.m --> Computes the timing parameters eta (initialization window), tau (exploit window), and phi (vulnerability window) using Algorithm 1 in [1] for the Case Study 1 presented in section 7.1 of [1]
+ 
  (-) WTC_Sys_Affine_Control.m --> Generates the results Figure 4a in section 7.1 of [1]
+ 
  (-) WTC_Sys_SC_Control.m --> Generates the results Figure 4b in section 7.1 of [1]
+ 
  (-) Poly_Sys_Find_CBF.m --> Computes the control barrier function for the Case Study 2 presented in section 7.2 of [1]
+ 
  (-) Poly_Sys_Algorithm1.m --> Computes the timing parameters eta (initialization window), tau (exploit window), and phi (vulnerability window) using Algorithm 1 in [1] for the Case Study 2 presented in section 7.2 of [1]
+ 
  (-) WTC_Sys_Affine_Control.m --> Generates the results Figure 5a in section 7.2 of [1]
+ 
  (-) WTC_Sys_SC_Control.m --> Generates the results Figure 5b in section 7.2 of [1]
 
 • Steps for using the provided MATLAB scripts for generating the results (Figure 4 and Figure 5) presented in [1]:
 
  (-) For generating the results Given in Figure 4a of [1] run "WTC_Sys_Affine_Control.m"
+ 
  (-) For generating the results Given in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
+ 
  (-) For generating the results Given in Figure 4a of [1] run "Poly_Sys_Affine_Control.m"
+ 
  (-) For generating the results Given in Figure 4b of [1] run "Poly_Sys_SC_Control.m"
 
 ***** Virtual Machine details *****
 
 (***) A Virtual Machine installed with all the dependencies required for running the provided MATLAB scripts are given in the folder "ICCPS_REP_SUB221_VM.rar"
+
  (-) Virtual machine generated using VMWare Workstation (version 16.2.2)
+ 
  (-) Settings of the Host machine used for running the provided virtual machine: a workstation with Intel(R) Xeon(R) W-2145 CPU with 3.70GHz processor and 128GB memory installed with MS Windows 10.
+ 
  (-) To import the virtual machine, first Unzip the folder "ICCPS_REP_SUB221_VM.rar" and then load the file "ICCPS_REP_SUB221" (File type: OVF-Open Virtualization Format Package) using VMWare Workstation (version 16.2.2 recommended)
+ 
  (-) After loading the virtual machine provided in "ICCPS_REP_SUB221_VM.rar" Open MATLAB (already installed in the virtual machine) and navigate to the "ICCPC_REP_SUB221" folder to locate all the MATLAB scripts that are needed to generate the results given in [1].
 
 Note: You may freely redistribute and use this sample code, with or without modification, provided you include the original Copyright notice and use restrictions.
