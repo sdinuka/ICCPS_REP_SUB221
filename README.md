@@ -29,9 +29,9 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
  
  (-) Poly_Sys_Algorithm1.m --> Computes the timing parameters eta (initialization window), tau (exploit window), and phi (vulnerability window) using Algorithm 1 in [1] for the Case Study 2 presented in section 7.2 of [1]
  
- (-) WTC_Sys_Affine_Control.m --> Generates the results Figure 5a in section 7.2 of [1]
+ (-) Poly_Sys_Affine_Control.m --> Generates the results Figure 5a in section 7.2 of [1]
  
- (-) WTC_Sys_SC_Control.m --> Generates the results Figure 5b in section 7.2 of [1]
+ (-) Poly_Sys_SC_Control.m --> Generates the results Figure 5b in section 7.2 of [1]
 
 • Steps for using the provided MATLAB scripts for generating the results (Figure 4 and Figure 5) presented in [1]:
 
@@ -43,7 +43,7 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
  
  (-) To generate the results presented in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
  
- (***) Please follow the steps below to generate the results presented in Figure 4 of [1]
+ (***) Please follow the steps below to generate the results presented in Figure 5 of [1]
  
  (-) First run Poly_Sys_Algorithm1.m to generate corresponding timing parameters eta, tau, and phi.
  
