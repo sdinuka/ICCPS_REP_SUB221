@@ -35,13 +35,21 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
 
 • Steps for using the provided MATLAB scripts for generating the results (Figure 4 and Figure 5) presented in [1]:
 
- (-) For generating the results Given in Figure 4a of [1] run "WTC_Sys_Affine_Control.m"
+ (***) Please follow the steps below to generate the results presented in Figure 4 of [1]
  
- (-) For generating the results Given in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
+ (-) First run WTC_Sys_Algorithm1.m to generate corresponding timing parameters eta, tau, and phi.
+
+ (-) Then to generate the results presented in Figure 4a of [1] run "WTC_Sys_Affine_Control.m"
  
- (-) For generating the results Given in Figure 4a of [1] run "Poly_Sys_Affine_Control.m"
+ (-) To generate the results presented in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
  
- (-) For generating the results Given in Figure 4b of [1] run "Poly_Sys_SC_Control.m"
+ (***) Please follow the steps below to generate the results presented in Figure 4 of [1]
+ 
+ (-) First run Poly_Sys_Algorithm1.m to generate corresponding timing parameters eta, tau, and phi.
+ 
+ (-)  Then to generate the results presented in Figure 5a of [1] run "Poly_Sys_Affine_Control.m"
+ 
+ (-) To generate the results presented in Figure 5b of [1] run "Poly_Sys_SC_Control.m"
 
 ***** Virtual Machine details *****
 
