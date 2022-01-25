@@ -1,7 +1,9 @@
+# ICCPS_REP_SUB221
+
 Summary
 
 Resilient cyber-physical systems (CPS) must ensure safety and perform required tasks in the presence of malicious cyber attacks. Recently, restart-based defenses have been proposed in which a CPS mitigates attacks by reverting to an initial safe state. In our
-paper [1], we consider a class of reactive restart approaches for CPS under malicious attacks with verifiable safety guarantees. We consider a setting where the controllers are engineered to crash and reboot following faults or attacks. We present a hybrid system model that captures the trade-off between security, availability, and safety of the CPS due to the reactive restart. We develop sufficient conditions under which an affine controller provides verifiable safety guarantees for the physical plant using a barrier certificate approach. We synthesize safety-critical controllers using control barrier functions to guarantee system safety under given timing parameters. We present two case studies on the proposed approach using a warehouse temperature control system and a two-dimensional non-linear system. Our proposed approach in [1] guarantees the safety for both cases.
+paper [1], we consider a class of reactive restart approaches for CPS under malicious attacks with verifiable safety guarantees. We consider a setting where the controllers are engineered to crash and reboot following faults or attacks. We present a hybraid system model that captures the trade-off between security, availability, and safety of the CPS due to the reactive restart. We develop sufficient conditions under which an affine controller provides verifiable safety guarantees for the physical plant using a barrier certificate approach. We synthesize safety-critical controllers using control barrier functions to guarantee system safety under given timing parameters. We present two case studies on the proposed approach using a warehouse temperature control system and a two-dimensional non-linear system. Our proposed approach in [1] guarantees the safety for both cases.
 
 Code description
 
@@ -18,25 +20,47 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
 • Detailed Summary of the scripts:
 
  (-) WTC_Sys_Algorithm1.m --> Computes the timing parameters eta (initialization window), tau (exploit window), and phi (vulnerability window) using Algorithm 1 in [1] for the Case Study 1 presented in section 7.1 of [1]
+ 
  (-) WTC_Sys_Affine_Control.m --> Generates the results Figure 4a in section 7.1 of [1]
+ 
  (-) WTC_Sys_SC_Control.m --> Generates the results Figure 4b in section 7.1 of [1]
+ 
  (-) Poly_Sys_Find_CBF.m --> Computes the control barrier function for the Case Study 2 presented in section 7.2 of [1]
+ 
  (-) Poly_Sys_Algorithm1.m --> Computes the timing parameters eta (initialization window), tau (exploit window), and phi (vulnerability window) using Algorithm 1 in [1] for the Case Study 2 presented in section 7.2 of [1]
- (-) WTC_Sys_Affine_Control.m --> Generates the results Figure 5a in section 7.2 of [1]
- (-) WTC_Sys_SC_Control.m --> Generates the results Figure 5b in section 7.2 of [1]
+ 
+ (-) Poly_Sys_Affine_Control.m --> Generates the results Figure 5a in section 7.2 of [1]
+ 
+ (-) Poly_Sys_SC_Control.m --> Generates the results Figure 5b in section 7.2 of [1]
 
 • Steps for using the provided MATLAB scripts for generating the results (Figure 4 and Figure 5) presented in [1]:
 
- (-) For generating the results Given in Figure 4a of [1] run "WTC_Sys_Affine_Control.m"
- (-) For generating the results Given in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
- (-) For generating the results Given in Figure 4a of [1] run "Poly_Sys_Affine_Control.m"
- (-) For generating the results Given in Figure 4b of [1] run "Poly_Sys_SC_Control.m"
+ (***) Please follow the steps below to generate the results presented in Figure 4 of [1]
+ 
+ (-) First run WTC_Sys_Algorithm1.m to generate corresponding timing parameters eta, tau, and phi.
 
+ (-) Then to generate the results presented in Figure 4a of [1] run "WTC_Sys_Affine_Control.m"
+ 
+ (-) To generate the results presented in Figure 4b of [1] run "WTC_Sys_SC_Control.m"
+ 
+ (***) Please follow the steps below to generate the results presented in Figure 5 of [1]
+ 
+ (-) First run Poly_Sys_Algorithm1.m to generate corresponding timing parameters eta, tau, and phi.
+ 
+ (-)  Then to generate the results presented in Figure 5a of [1] run "Poly_Sys_Affine_Control.m"
+ 
+ (-) To generate the results presented in Figure 5b of [1] run "Poly_Sys_SC_Control.m"
+
+***** Virtual Machine details *****
 
 (***) A Virtual Machine installed with all the dependencies required for running the provided MATLAB scripts are given in the folder "ICCPS_REP_SUB221_VM.rar"
+
  (-) Virtual machine generated using VMWare Workstation (version 16.2.2)
+ 
  (-) Settings of the Host machine used for running the provided virtual machine: a workstation with Intel(R) Xeon(R) W-2145 CPU with 3.70GHz processor and 128GB memory installed with MS Windows 10.
+ 
  (-) To import the virtual machine, first Unzip the folder "ICCPS_REP_SUB221_VM.rar" and then load the file "ICCPS_REP_SUB221" (File type: OVF-Open Virtualization Format Package) using VMWare Workstation (version 16.2.2 recommended)
+ 
  (-) After loading the virtual machine provided in "ICCPS_REP_SUB221_VM.rar" Open MATLAB (already installed in the virtual machine) and navigate to the "ICCPC_REP_SUB221" folder to locate all the MATLAB scripts that are needed to generate the results given in [1].
 
 Note: You may freely redistribute and use this sample code, with or without modification, provided you include the original Copyright notice and use restrictions.
