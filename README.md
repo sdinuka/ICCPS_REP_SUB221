@@ -13,7 +13,7 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
 
 • MATLAB version - 2019a
 
-• MATLAB toolboxes required - symbolic toolbox
+• MATLAB toolboxes required - symbolic toolbox; optimization toolbox; control system toolbox
 
 • MATLAB third party toolboxes required to download - YALMIP toolbox [2] (install via tbxmanager [3]); SeDuMi [4]; SOSTOOLS [5] (version .303)
 
