@@ -53,15 +53,15 @@ The provided scripts include the MATLAB (version 2019a) implementation of the Al
 
 ***** Virtual Machine details *****
 
-(***) A Virtual Machine installed with all the dependencies required for running the provided MATLAB scripts are given in the folder "ICCPS_REP_SUB221_VM.rar"
+(***) A Virtual Machine installed with all the dependencies required for running the provided MATLAB scripts is accessible through [6]
 
- (-) Virtual machine generated using VMWare Workstation (version 16.2.2)
+ (-) Virtual machine generated using VirtualBox (version 6.1)
  
- (-) Settings of the Host machine used for running the provided virtual machine: a workstation with Intel(R) Xeon(R) W-2145 CPU with 3.70GHz processor and 128GB memory installed with MS Windows 10.
+ (-) Settings of the Host machine used for running the provided virtual machine: a workstation with Intel(R) Xeon(R) W-2145 CPU with 3.70GHz processor and 128GB memory running MS Windows 10.
  
- (-) To import the virtual machine, first Unzip the folder "ICCPS_REP_SUB221_VM.rar" and then load the file "ICCPS_REP_SUB221" (File type: OVF-Open Virtualization Format Package) using VMWare Workstation (version 16.2.2 recommended)
+ (-) To import the virtual machine, first download and unzip the folder "ICCPS_REP_SUB221_VM.rar" at [6] and then import the file "ICCPS_REP_SUB221.ova" (File type: OVF-Open Virtualization Format Package) using VirtualBox
  
- (-) After loading the virtual machine provided in "ICCPS_REP_SUB221_VM.rar" Open MATLAB (already installed in the virtual machine) and navigate to the "ICCPC_REP_SUB221" folder to locate all the MATLAB scripts that are needed to generate the results given in [1].
+ (-) Open MATLAB installed in the virtual machine and navigate to the "ICCPC_REP_SUB221" folder to locate all the MATLAB scripts that are needed to generate the results given in [1].
 
 Note: You may freely redistribute and use this sample code, with or without modification, provided you include the original Copyright notice and use restrictions.
 
@@ -78,6 +78,8 @@ Related papers
 [4] https://github.com/sqlp/sedumi
 
 [5] https://www.cds.caltech.edu/sostools/
+
+[6] https://www.dropbox.com/sh/o8wg283sslcxy9z/AACwSMDFsDcD55jGlYSk-AY0a?dl=0
 
 For additional information, contact: Dinuka Sahabandu, email: sdinuka@uw.edu
 
